@@ -22,3 +22,9 @@ class Owner:
             raise Exception
     def get_sorted_pets(self):
         return sorted(self.pets(),key=lambda pet: pet.name)
+    
+    #self.pets() returns all the pets that is under that owner's instance. 
+    #you're given an array of objects, the pet and its categories
+    #you have to sort through the array with sorted.
+    #key = lambda is like a for loop and it iterates through the array
+    #pet: pet.name is the criteria we want for how we want to sort through the array, we chose by pet.name
